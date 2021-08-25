@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sans: 'Josefin Sans', sans-serif;
+}
+
+body {
+    
+    font-family: var(--sans);
+    width: 100%;
+    height: 110vh;
+    max-width: 1440px;
+    margin: auto;
+   
+    
+}
+
+.container {
+    display: flex;
+    height: 110vh;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: cover;
+	background-position: center;
+}
+
+#hero-mobile {
+    display: none;
+}
+
+.left-side {
+    width: 60%;
+    
+}
+
+.left-side .content {
+    padding: 2rem 0rem 0 6rem;
+    width: 100%;
+}
+
+.left-side .content h1 {
+    margin-top: 6rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+
+.left-side .content span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.left-side .content p {
+    padding: 1.5rem 0;
+    width: 80%;
+    color: hsl(0, 36%, 70%);
+    line-height: 2;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.form input {
+    width: 400px;
+    position: relative;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 20px;
+    border: .3px solid grey;
+    outline: none;
+}
+
+.form button {
+    
+    
+    width: 80px;
+    background-color: pink;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+.right-side {
+    width: 40%;
+    background-image: url("images/hero-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    max-width: 50%;
+    height: 100vh;
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .right-side {
+        display: none;
+        
+    }
+
+   
+
+    .container {
+        background: none;
+        width: 100%;
+    }
+
+    #hero-mobile {
+        display: block;
+        margin-top: 2rem;
+        width: 300px;
+        
+    }
+
+    #hero-mobile {
+        width: 100%;
+    }
+
+
+    .left-side {
+        padding: 0;
+        background: none;
+        width: 100%;
+    }
+
+    #logo {
+        padding: .2rem 1rem;
+    }
+
+    .left-side .content {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .left-side .content h1 {
+        margin-top: 3rem;
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .left-side .content p {
+        padding: 1rem 0;
+        line-height: 1.2;
+        width: 70%;
+        margin: auto;
+    }
+
+    .form {
+        display: flex;
+        
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form input {
+        max-width: 250px;
+        justify-content: center;
+        margin: auto;
+        
+    }
+
+    .form button {
+        width: 50%;
+        margin: auto;
+    }
+
+   
+
+    
+}
+    
+
+   
+
+
